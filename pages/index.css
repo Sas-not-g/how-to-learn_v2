@@ -1,3 +1,7 @@
+/*normalize*/
+@import url('../styles/normalize.css');
+/*rotation*/
+@import url('../blocks/rotation/rotation.css');
 /*root*/
 @import url('../blocks/root/root.css');
 /*header*/
@@ -88,12 +92,3 @@
 @import url('../blocks/footer/__column-heading/footer__column-heading.css');
 @import url('../blocks/footer/__column/_content/footer__column_content_social.css');
 @import url('../blocks/footer/__social-icon/footer__social-icon.css');
-
-@keyframes rotation {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
