@@ -1,5 +1,5 @@
 /*normalize*/
-@import url('../styles/normalize.css');
+@import url('../vendor/normalize.css');
 /*rotation*/
 @import url('../blocks/rotation/rotation.css');
 /*root*/

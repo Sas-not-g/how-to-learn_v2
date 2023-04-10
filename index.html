@@ -2,7 +2,6 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="pages/index.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Научиться учиться</title>
@@ -11,24 +10,24 @@
     <header class="header">
       <div class="logo logo_place_header"></div>
       <h1 class="header__title">Научиться учиться</h1>
-      <h2 class="header__subtitle">
+      <p class="header__subtitle">
         Какие современные и эффективные подходы к обучению вы можете использовать в своей жизни?<a
           class="header__link"
           href="#"
         >
           Узнать &rarr;</a
         >
-      </h2>
+      </p>
       <img
         class="header__main-illustration"
         src="images/header-image.png"
         alt='картина "опять двойка"'
       />
-      <div class="header__square-pic"></div>
+      <div class="header__square-pic rotation"></div>
     </header>
     <main class="content">
       <section class="description">
-        <div class="two-columns">
+        <article class="two-columns">
           <h2 class="two-columns__brief">Главные проблемы в обучении</h2>
           <div class="two-columns__main-text">
             <p class="two-columns__paragraph">
@@ -47,73 +46,69 @@
               Практикуме.
             </p>
           </div>
-        </div>
+        </article>
       </section>
       <section class="techniques">
         <h2 class="section-title">Техники обучения</h2>
-        <h3 class="section-subtitle">Пять практик от Барбары Оакли</h3>
-        <div class="cards">
-          <div class="cards__item">
+        <p class="section-subtitle">Пять практик от Барбары Оакли</p>
+        <ul class="cards">
+          <li class="cards__item">
             <img class="cards__image" src="images/cards-attention.png" alt="Два вида внимания" />
-            <h4 class="cards__title">Два вида внимания</h4>
+            <h3 class="cards__title">Два вида внимания</h3>
             <p class="cards__description">
               Глубокие знания возникают, если чередовать сфокусированное и рассеянное мышление.
             </p>
-          </div>
-          <div class="cards__item">
+          </li>
+          <li class="cards__item">
             <img class="cards__image" src="images/cards-recall.png" alt="Воспоминание" />
-            <h4 class="cards__title">Recall</h4>
+            <h3 class="cards__title">Recall</h3>
             <p class="cards__description">
               Вспомните изученное — это позволит соединить разрозненные порции памяти.
             </p>
-          </div>
-          <div class="cards__item">
+          </li>
+          <li class="cards__item">
             <img class="cards__image" src="images/cards-interliving.png" alt="Интерливинг" />
-            <h4 class="cards__title">Интерливинг</h4>
+            <h3 class="cards__title">Интерливинг</h3>
             <p class="cards__description">
               Изучайте несколько навыков одновременно, они обогащают друг друга.
             </p>
-          </div>
-          <div class="cards__item">
+          </li>
+          <li class="cards__item">
             <img class="cards__image" src="images/cards-question.png" alt="Вопросы" />
-            <h4 class="cards__title">Вопросы</h4>
+            <h3 class="cards__title">Вопросы</h3>
             <p class="cards__description">
               Слушая преподавателя, придумывайте хороший вопрос, который вас действительно волнует.
             </p>
-          </div>
-          <div class="cards__item">
+          </li>
+          <li class="cards__item">
             <img
               class="cards__image"
               src="images/cards-competence.png"
               alt="Иллюзия компетентности"
             />
-            <h4 class="cards__title">Иллюзия компетентности</h4>
+            <h3 class="cards__title">Иллюзия компетентности</h3>
             <p class="cards__description">
               Повторите про себя, запишите, расскажите другу: вам только кажется, что вы владеете
               новой темой.
             </p>
-          </div>
-        </div>
+          </li>
+        </ul>
       </section>
       <section class="video">
         <h2 class="section-title">Видео нa TED</h2>
-        <h3 class="section-subtitle">Для тех, кто любит прокрастинировать</h3>
+        <p class="section-subtitle">Для тех, кто любит прокрастинировать</p>
         <div class="video__iframes">
           <iframe
-            width="515"
-            height="316"
+            class="video__iframe"
             src="https://www.youtube.com/embed/5MgBikgcWnY"
             title="The first 20 hours -- how to learn anything | Josh Kaufman | TEDxCSU"
-            style="border: none"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen
           ></iframe>
           <iframe
-            width="515"
-            height="316"
+            class="video__iframe"
             src="https://www.youtube.com/embed/arj7oStGLkU"
             title="Tim Urban: Inside the mind of a master procrastinator | TED"
-            style="border: none"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen
           ></iframe>
@@ -122,14 +117,16 @@
       <section class="oakley">
         <div class="two-columns">
           <h2 class="two-columns__brief">История Барбары Оакли.</h2>
-          <p class="two-columns__main-text two-columns__paragraph">
-            С детства Барбаре не давалась математика. Она считала себя законченным гуманитарием,
-            причём далеко не самым умным. В армии она изучала русский язык, чтобы получить надбавку,
-            да так успешно, что её выдвинули в командиры. Но для продвижения по службе нужно было
-            сдавать математику. И тогда Барбара придумала свой подход к точным наукам. Оказалось,
-            если вам что-то «плохо даётся», ваши добытые трудом знания гораздо глубже, чем у тех,
-            кому всё ясно с первого взгляда.
-          </p>
+          <div class="two-columns__main-text">
+            <p class="two-columns__paragraph">
+              С детства Барбаре не давалась математика.Она считала себя законченным гуманитарием,
+              причём далеко не самым умным. В армии она изучала русский язык, чтобы получить
+              надбавку, да так успешно, что её выдвинули в командиры. Но для продвижения по службе
+              нужно было сдавать математику. И тогда Барбара придумала свой подход к точным наукам.
+              Оказалось, если вам что-то «плохо даётся», ваши добытые трудом знания гораздо глубже,
+              чем у тех, кому всё ясно с первого взгляда.
+            </p>
+          </div>
         </div>
       </section>
       <section class="feynman">
@@ -183,15 +180,15 @@
       </section>
       <section class="khan">
         <div class="khan__container">
-          <h3 class="khan__author">Салман Хан</h3>
-          <h2 class="khan__title section-title">Весь мир — школа</h2>
-          <p class="khan__quote">
+          <p class="khan__author">Салман Хан</p>
+          <h2 class="khan__title">Весь мир — школа</h2>
+          <blockquote class="khan__quote">
             Страсть и новаторство Сала Хана меняют процесс обучения миллионов студентов по всему
             миру. Книгу «Весь мир — школа» нужно прочитать всем, кто занимается образованием — так
             учащиеся повсюду смогут получить навыки и знания, которые приносят успех в школе,
             карьере и жизни.
-          </p>
-          <h4 class="khan__quote-author">Джордж Лукас</h4>
+          </blockquote>
+          <p class="khan__quote-author">Джордж Лукас</p>
           <p class="khan__quote-author-subline">Кинорежиссер, продюсер</p>
           <div class="khan__book-container">
             <img class="khan__book-pic" src="images/khan-book.jpg" alt='Книга "Весь мир - школа"' />
@@ -202,7 +199,7 @@
       <section class="kaufman">
         <h2 class="section-title section-title_theme_dark">Принципы обучения</h2>
         <h3 class="section-subtitle section-subtitle_theme_dark">от Джоша Кауфмана</h3>
-        <div class="kaufman__triangle"></div>
+        <div class="kaufman__triangle rotation"></div>
         <ul class="table table_theme_dark">
           <li class="table__cell table__cell_theme_dark">
             <h4 class="table__heading table__heading_theme_dark">1</h4>
